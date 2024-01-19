@@ -1,0 +1,185 @@
+<!-- left section  -->
+<div class="left">
+    <img src="images/logo.png">
+    <button id="bars" onclick="openSidebar()" ><img src="images/bars.svg"  id="bars-1"  width="20px" style="filter: invert(50%) sepia(11%) saturate(1532%) hue-rotate(119deg) brightness(89%) contrast(86%);" ></button> 
+    <!-- <i class="fa fa-bars"></i> -->
+</div>
+
+<!-- search section  -->
+<div class="middle">
+    <i class="fa fa-search"></i>
+    <p>Search here...</p>
+</div>
+<!-- ------------------------------ menulist options div ------------------------------- -->
+
+<div class="right mobile-right" >
+    <ul class="icons">
+        <li class="menu-item">
+        <a href="#" ><i class='bx bx-fullscreen'></i></a>
+    </li>
+    <!-- star  -->
+    <li class="menu-item">
+        <a href="#"><i class='bx bx-star'></i></a>
+        <ul class="sub-menu" id="star">
+            <li>
+                <div id="search-bookmark">
+                    <i class="fa fa-search"></i>
+                    <input type="text" placeholder="search for bookmark">
+                </div>
+            </li>
+            <li><a class="full-star full-star-1" href="#">
+                <i class="fa fa-envelope-o"></i>
+                <span>Email</span>
+                
+                <i class="fa fa-star-o "></i>
+            </a></li>
+            <li>
+                <a class="full-star full-star-2" href="#">
+                    <i class='bx bx-comment' ></i>
+                    <span>Chat</span> 
+                   <i class="fa fa-star-o"></i>
+              
+                
+            </a></li>
+            <li><a class="full-star full-star-3" href="#">
+                <i class='bx bx-command'></i>
+                <span>Feather icon</span>
+                <i class="fa fa-star-o"></i>
+
+            </a></li>
+            <li><a class="full-star full-star-4" href="#">
+                <i class="fa fa-laptop"></i>
+                <span>Widgets</span> 
+                <i class="fa fa-star-o"></i>
+        </a></li>
+            
+
+        </ul>
+    </li>
+    <!-- end  -->
+    <!-- notification  -->
+    <li class="menu-item">
+        <a href="#"><i class="bx bx-bell bx-tada "></i></a>
+        <ul class="sub-menu" id="notis-bell">
+            <li>
+                <div id="notisfy" class="green-hover" >
+                <h4 style="font-size: 15px;">You have 3 Notifications</h4>
+                <button id="btn-4">4</button>
+            </div>
+            </li>
+           
+            
+            <li>
+                <div class="notisfy-1 green-hover"  >
+                    <span><i class="fa fa-bolt"></i></span>
+                    <div>
+                        <h5>Delivery Processing</h5>
+                        <p>10 minutes ago</p>
+                    </div>
+                    
+                </div>
+          </li>
+          
+            <li>
+                <div class="notisfy-1 brown-hover "  >
+                        <span><i class="fa fa-check-circle-o"></i></span>
+                        <div>
+                            <h5>Order Complete</h5>
+                            <p>1 hour ago</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="notisfy-1 green-hover" >
+                        <span><i class="fa fa-file-text-o"></i></span>
+                        <div>
+                         <h5>Ticket Generated</h5>
+                             <p>3 hours ago</p>
+                            </div>
+                         
+                     </div>
+                    </li>
+                    
+                    <li>
+                        <div class="notisfy-1 pink-hover" >
+                            <span><i class='bx bxs-user-check'></i></span>
+                            <div>
+                             <h5>Delivery complete</h5>
+                             <p>6 hours ago</p>
+                            </div>
+                             
+                         </div>
+                        </li>
+        </ul>
+    </li>
+    <!-- end  -->
+    <!-- darkmode  -->
+    <li class="menu-item">
+        <a href="#" ><i class='bx bx-moon' ></i></a>
+    </li>
+    <!-- end  -->
+
+    <!-- conversation  -->
+    <li class="menu-item ">
+        <a href="#"><i class='bx bx-comment' ></i></a>
+        <ul class="sub-menu " id="conversation">
+            
+            <li>
+                <div class="conversation-1" >
+                   <div>
+                       <img src="images/woman1.jpeg" width="40px">
+                       <h5>Ain Chevez</h5>
+                       <p>32 min ago</p>
+                   </div>
+                   <p>Lorem ipsum is simply<br> dummy...</p>
+                </div>
+          </li>
+            <li>
+                <div class="conversation-1" >
+                    <div>
+                        <img src="images/woman2.jpeg" width="40px">
+                        <h5>Erica Hughe</h5>
+                        <p>58 min ago</p>
+                    </div>
+                    <p>Lorem ipsum is simply<br> dummy...</p>
+                 </div>
+                </li>
+                
+                <li>
+                    <div class="conversation-1" >
+                        <div>
+                            <img src="images/woman3.jpeg" width="40px">
+                            <h5>Kori Thomas</h5>
+                            <p>1 hour ago</p>
+                        </div>
+                        <p>Lorem ipsum is simply dummy...</p>
+                     </div>
+                    </li>
+                    
+                    <li>
+                        <div class="conversation-1 " id="center" >
+                             <h6>See All</h6>
+                             
+                         </div>
+                        </li>
+        </ul>
+    </li>
+    <!-- end  -->
+    <!-- search btn  -->
+    <li class="menu-item">
+        <button class="btn"><i class="fa fa-sign-out"></i>Log out</button>
+    </li>
+    <!-- end  -->
+
+    </ul>
+    </div>
+    <!-- end of menulist options  -->
+
+     <!-- mobile btn -->
+<div class="open-right-div" id="togglerbar" onclick="mobileNav()">
+    
+   <span><i class="fa  fa-ellipsis-h"></i></span> 
+</div>
+<!-- mobile end -->
+<script src="responsive-nav.js"></script>

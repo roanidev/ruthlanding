@@ -1,0 +1,838 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ----------------------- top navbar starts here ------------------------ -->
+        <nav class="navbar" id="topnav"></nav>
+        <!-- ------------------------ top navbar ends here ------------------------- -->
+
+
+        <!-- -------------------------- main site section -------------------------- -->
+        <div class="mainsite" id="sidemenu"></div>
+    <!-- --------------------------- end of mainsite --------------------------- -->
+          <!-- ------------------------ main wrapper section ------------------------- -->
+    <div class="mainwrapper">
+        <!-- ------------------------ first indext section ------------------------- -->
+       <section>
+           <div class="first-index-section">
+               <div id="left-welcome">
+                <div id="welcome-card">
+                    <span class="spin-btn"><i class="fa fa-cog "></i></span>
+                    <h1>wellcome back, ruth!!</h1>
+                    <P>welcome to the Viho Family! we are happy that you visited this site. We will be happy to help you grow your business.</P>
+                    <button>Update</button>
+                </div>
+                <div id="annual-income">
+                    <div class="yeman-icon">
+                        <span><i class='bx bx-yen' ></i></span>
+                        <h2 class="my-3">8,50,49</h2>
+                        <p>Our annual Income</p>
+                        <div class="arrow mt-3">
+                            <span><i class="fa fa-arrow-up" ></i></span>
+                            <p>95.54%</p>
+                        </div>
+                    </div>
+                    <div class="yeman-icon">
+                        <span id="brown-1"><i class='bx bx-tennis-ball'></i></span>
+                        <h2 class="my-3">2,03,59</h2>
+                        <p>Our annual Losses</p>
+                        <div class="arrow mt-3" >
+                            <span class="brown-2" ><i class="fa fa-arrow-up" ></i></span>
+                            <p class="brown-3">90.54%</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+               <div id="right-overview">
+                    <div class="header">
+                        <div class="header-1">
+                            <p>Sales Overview</p>
+                            <button><i class="fa  fa-cog "></i></button>
+                        </div>
+                            <div class="header-2">
+                                <p style="color:#24695c;">$859.25k</p>
+                            <span style="margin-left:10px;" ><i class="fa fa-arrow-up" ></i></span>
+                            <p>86% More than last year</p>
+                        </div>
+                    </div>
+                    <!-- chart chart-timeline  -->
+                    <div id="chart-timeline"></div>
+                    
+               </div>
+           </div>
+       </section>
+       <!-- -------------------- first index section ends here -------------------- -->
+       <section>
+        <div class="second-indext-section">
+            <div class="left-growth">
+                <div id="growth-activity">
+                    <div id="growth-overview">
+                        <div class="header">
+                        <div class="header-1">
+                            <p>Growth Overview</p>
+                            <button><i class="fa  fa-cog "></i></button>
+                             </div>
+                            <div class="header-2">
+                            <span  ><i class="fa fa-arrow-up" ></i></span>
+                            <p>80% Growth</p>
+                        </div>
+                    </div>
+                    <!-- CHART  -->
+                    <canvas id="piee"></canvas>
+                    
+                    </div>
+                    <div id="latest-activity">
+                        <div class="header">
+                            <div class="header-1">
+                                <p>Latest Activity</p>
+                                <button><i class="fa  fa-cog "></i></button>
+                                 </div>
+                                <div class="header-2">
+                                <p>Today <Span style="background: none;">|</Span>Month</p>
+                            </div>
+                        </div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><i class='bx bx-line-chart'></i></td>
+                                    <td>Google Porject Aply Review<p style="font-size:12px; color:silver; margin-left:10px;">Complete in 3 Hours</p></td>
+                                    <td>Edith</td>
+                                    <td>Delete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class='bx bx-briefcase-alt-2'></i></td>
+                                    <td>Google Porject Aply Review<p style="font-size:12px; color:silver; margin-left:10px;">Complete in 3 Days</p></td>
+                                    <td>Edith</td>
+                                    <td>Delete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-lightbulb-o"></i></td>
+                                    <td>Google Porject Aply Review<p style="font-size:12px; color:silver; margin-left:10px;">Due in one Hour</p></td>
+                                    <td>Edith</td>
+                                    <td>Delete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-desktop"></i></td>
+                                    <td>Google Porject Aply Review<p style="font-size:12px; color:silver; margin-left:10px;">Complete in 3 Hours</p></td>
+                                    <td>Edith</td>
+                                    <td>Delete</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><i class='bx bx-down-arrow-circle'></i></td>
+                                    <td>Google Porject Aply Review<p style="font-size:12px; color:silver; margin-left:10px;">Complete in 3 Days</p></td>
+                                    <td>Edith</td>
+                                    <td>Delete</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div id="recent-order">
+                    <div class="header">
+                        <div class="header-1">
+                            <p>Recent Order</p>
+                            <button><i class="fa  fa-cog "></i></button>
+                             </div>
+                    </div>
+                    <table>
+                        <thead>
+                         <tr>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Quality</th>
+                            <th>Value</th>
+                            <th>Rate</th>
+                        </tr>
+                        </thead>
+                    
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div id="table-name" style="display: flex; align-items: center;">
+                                        <img src="images/shoe.png" alt="">
+                                        <p style="margin-left: 15px; font-size:15px; color: #24695c;">Yellow New Nike Shoe</p>
+                                    </div>
+                                </td>
+                                <td>16 January</td>
+                                <td>54146</td>
+                                <td><img src="images/graph-1.png"alt=""></td>
+                                <td>$210326</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="table-name" style="display: flex; align-items: center;">
+                                        <img src="images/ring.png" alt="">
+                                        <p style="margin-left: 15px; font-size:15px; color: #24695c;">Sony Brand New Headphone</p>
+                                    </div>
+                                </td>
+                                <td>18 Fabruary</td>
+                                <td>32015</td>
+                                <td><img src="images/graph-2.png"alt=""></td>
+                                <td>$210326</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="table-name" style="display: flex; align-items: center;">
+                                        <img src="images/tree.png" alt="">
+                                        <p style="margin-left: 15px; font-size:15px; color: #24695c;">Beautiful Golden Tree Plant</p>
+                                    </div>
+                                </td>
+                                <td>28 March</td>
+                                <td>12548</td>
+                                <td><img src="images/graph-3.png"alt=""></td>
+                                <td>$210326</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="table-name" style="display: flex; align-items: center;">
+                                        <img src="images/bag.png" alt="">
+                                        <p style="margin-left: 15px; font-size:15px; color: #24695c;">Marco M Kely Handbag</p>
+                                    </div>
+                                </td>
+                                <td>16 Appril</td>
+                                <td>15495</td>
+                                <td><img src="images/graph-4.png"alt=""></td>
+                                <td>$210326</td>
+                                <td>Done</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div id="table-name" style="display: flex; align-items: center;">
+                                        <img src="images/shirt.png" alt="">
+                                        <p style="margin-left: 15px; font-size:15px; color: #24695c;">Being Human Branded T-shirt</p>
+                                    </div>
+                                </td>
+                                <td>16 May</td>
+                                <td>54146</td>
+                                <td><img src="images/graph-5.png"alt=""></td>
+                                <td>$210326</td>
+                                <td>Done</td>
+                            </tr>
+                        </tbody>
+    
+                    </table>
+                </div>
+            </div>
+            <div class="right-users">
+                <div id="right-user-activation">
+                    <div class="header">
+                        <div class="header-1">
+                            <p>User Activations</p>
+                            <button><i class="fa  fa-cog "></i></button>
+                             </div>
+                            <div class="header-2">
+                            <p>Yearly User 24.65k</p>
+                        </div>
+                    </div>
+                    <!-- right user activation chart  -->
+                   <canvas id="barch" height="300"></canvas>
+                    <!-- <img src="images/barchart.png" width="100%" height="400px"> -->
+                
+                </div>
+                <div id="right-transaction">
+                    <div class="header">
+                        <div class="header-1">
+                            <p>Transaction</p>
+                            <button id="brw"><i class="fa  fa-cog "></i></button>
+                             </div>
+                            <div class="header-2">
+                            <p>5878 Successfull Transaction</p>
+                        </div>
+                    </div>
+                    <div class="header-a">
+                        <div class="header-b">
+                            <h3>$2,09,352k</h3>
+                            <span  ><i class="fa fa-arrow-up" ></i></span>
+                            <p>98.54</p>
+                             </div>
+                            <div id="p-light"><p>Total Balance</p></div>
+                    </div>
+                    <!-- TRANSACTION CHART  -->
+                   <canvas id="linechart" height="350" ></canvas>
+                    <!-- <img src="images/fc3noor2.svg"> -->
+                  
+                  
+                </div>
+            </div>
+        </div>
+       </section>
+   </div>
+
+
+
+   <!-- container  -->
+    </div>
+
+
+
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js" integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+             <!-- apexcharts  -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+
+    <script>
+    //  CHART OVER GROWTH 
+     
+        var pieChart = document.getElementById('piee').getContext('2d');
+         var piee = new Chart(pieChart, {
+          type:'pie',
+  options: {
+    responsive: true,
+    plugins: {
+      legend: {
+        labels: {
+          generateLabels: function(chart) {
+            // Get the default label list
+            const original = Chart.overrides.pie.plugins.legend.labels.generateLabels;
+            const labelsOriginal = original.call(this, chart);
+
+            // Build an array of colors used in the datasets of the chart
+            let datasetColors = chart.data.datasets.map(function(e) {
+              return e.backgroundColor;
+            });
+            datasetColors = datasetColors.flat();
+
+            // Modify the color and hide state of each label
+            labelsOriginal.forEach(label => {
+              // There are twice as many labels as there are datasets. This converts the label index into the corresponding dataset index
+              label.datasetIndex = (label.index - label.index % 2) / 2;
+
+              // The hidden state must match the dataset's hidden state
+              label.hidden = !chart.isDatasetVisible(label.datasetIndex);
+
+              // Change the color to match the dataset
+              label.fillStyle = datasetColors[label.index];
+            });
+
+            return labelsOriginal;
+          }
+        },
+        onClick: function(mouseEvent, legendItem, legend) {
+          // toggle the visibility of the dataset from what it currently is
+          legend.chart.getDatasetMeta(
+            legendItem.datasetIndex
+          ).hidden = legend.chart.isDatasetVisible(legendItem.datasetIndex);
+          legend.chart.update();
+        }
+      },
+      tooltip: {
+        callbacks: {
+          label: function(context) {
+            const labelIndex = (context.datasetIndex * 2) + context.dataIndex;
+            return context.chart.data.labels[labelIndex] + ': ' + context.formattedValue;
+          }
+        }
+      }
+    }
+  },
+
+            labels: ['Jan', 'Feb', 'Mar'],
+             data: {
+            labels: ['Overall Yay', 'Overall Nay', 'Group A Yay', 'Group A Nay', 'Group B Yay', 'Group B Nay', 'Group C Yay', 'Group C Nay'],
+            datasets: [
+                {
+                backgroundColor: ['#24695c1A', '#418578'],
+                data: [21, 79]
+                },
+                {
+                backgroundColor: [' rgb(186, 137, 98, 0.1)', '#ba895d'],
+                data: [33, 67]
+                },
+                {
+                backgroundColor: ['#24695c1A', '#418578'],
+                data: [20, 80]
+                },
+                {
+                backgroundColor: [' rgb(186, 137, 98, 0.1)', '#ba895d'],
+                data: [10, 90]
+                }
+            ]
+            },
+      });
+
+
+
+
+          // activation chart 
+
+      
+      
+      
+    
+
+
+
+// CHART TIME LINE 
+        var options = {
+          series: [{
+          data: [
+            [1330297200000,33.27],
+            [1330383600000,33.27],
+            [1330470000000,32.89],
+            [1330556400000,33.10],
+            [1330642800000,33.73],
+            [1330902000000,33.22],
+            [1330988400000,31.99],
+            [1331074800000,32.41],
+            [1331161200000,33.05],
+            [1331247600000,33.64],
+            [1331506800000,33.56],
+            [1331593200000,34.22],
+            [1331679600000,33.77],
+            [1331766000000,34.17],
+            [1331852400000,33.82],
+            [1332111600000,34.51],
+            [1332198000000,33.16],
+            [1332284400000,33.56],
+            [1332370800000,33.71],
+            [1332457200000,33.81],
+            [1332712800000,34.40],
+            [1332799200000,34.63],
+            [1332885600000,34.46],
+            [1332972000000,34.48],
+            [1333058400000,34.31],
+            [1333317600000,34.70],
+            [1333404000000,34.31],
+            [1333490400000,33.46],
+            [1333576800000,33.59],
+            [1333922400000,33.22],
+            [1334008800000,32.61],
+            [1334095200000,33.01],
+            [1334181600000,33.55],
+            [1334268000000,33.18],
+            [1334527200000,32.84],
+            [1334613600000,33.84],
+            [1334700000000,33.39],
+            [1334786400000,32.91],
+            [1334872800000,33.06],
+            [1335132000000,32.62],
+            [1335218400000,32.40],
+            [1335304800000,33.13],
+            [1335391200000,33.26],
+            [1335477600000,33.58],
+            [1335736800000,33.55],
+            [1335823200000,33.77],
+            [1335909600000,33.76],
+            [1335996000000,33.32],
+            [1336082400000,32.61],
+            [1336341600000,32.52],
+            [1336428000000,32.67],
+            [1336514400000,32.52],
+            [1336600800000,31.92],
+            [1336687200000,32.20],
+            [1336946400000,32.23],
+            [1337032800000,32.33],
+            [1337119200000,32.36],
+            [1337205600000,32.01],
+            [1337292000000,31.31],
+            [1337551200000,32.01],
+            [1337637600000,32.01],
+            [1337724000000,32.18],
+            [1337810400000,31.54],
+            [1337896800000,31.60],
+            [1338242400000,32.05],
+            [1338328800000,31.29],
+            [1338415200000,31.05],
+            [1338501600000,29.82],
+            [1338760800000,30.31],
+            [1338847200000,30.70],
+            [1338933600000,31.69],
+            [1339020000000,31.32],
+            [1339106400000,31.65],
+            [1339365600000,31.13],
+            [1339452000000,31.77],
+            [1339538400000,31.79],
+            [1339624800000,31.67],
+            [1339711200000,32.39],
+            [1339970400000,32.63],
+            [1340056800000,32.89],
+            [1340143200000,31.99],
+            [1340229600000,31.23],
+            [1340316000000,31.57],
+            [1340575200000,30.84],
+            [1340661600000,31.07],
+            [1340748000000,31.41],
+            [1340834400000,31.17],
+            [1340920800000,32.37],
+            [1341180000000,32.19],
+            [1341266400000,32.51],
+            [1341439200000,32.53],
+            [1341525600000,31.37],
+            [1341784800000,30.43],
+            [1341871200000,30.44],
+            [1341957600000,30.20],
+            [1342044000000,30.14],
+            [1342130400000,30.65],
+            [1342389600000,30.40],
+            [1342476000000,30.65],
+            [1342562400000,31.43],
+            [1342648800000,31.89],
+            [1342735200000,31.38],
+            [1342994400000,30.64],
+            [1343080800000,30.02],
+            [1343167200000,30.33],
+            [1343253600000,30.95],
+            [1343340000000,31.89],
+            [1343599200000,31.01],
+            [1343685600000,30.88],
+            [1343772000000,30.69],
+            [1343858400000,30.58],
+            [1343944800000,32.02],
+            [1344204000000,32.14],
+            [1344290400000,32.37],
+            [1344376800000,32.51],
+            [1344463200000,32.65],
+            [1344549600000,32.64],
+            [1344808800000,32.27],
+            [1344895200000,32.10],
+            [1344981600000,32.91],
+            [1345068000000,33.65],
+            [1345154400000,33.80],
+            [1345413600000,33.92],
+            [1345500000000,33.75],
+            [1345586400000,33.84],
+            [1345672800000,33.50],
+            [1345759200000,32.26],
+            [1346018400000,32.32],
+            [1346104800000,32.06],
+            [1346191200000,31.96],
+            [1346277600000,31.46],
+            [1346364000000,31.27],
+            [1346709600000,31.43],
+            [1346796000000,32.26],
+            [1346882400000,32.79],
+            [1346968800000,32.46],
+            [1347228000000,32.13],
+            [1347314400000,32.43],
+            [1347400800000,32.42],
+            [1347487200000,32.81],
+            [1347573600000,33.34],
+            [1347832800000,33.41],
+            [1347919200000,32.57],
+            [1348005600000,33.12],
+            [1348092000000,34.53],
+            [1348178400000,33.83],
+            [1348437600000,33.41],
+            [1348524000000,32.90],
+            [1348610400000,32.53],
+            [1348696800000,32.80],
+            [1348783200000,32.44],
+            [1349042400000,32.62],
+            [1349128800000,32.57],
+            [1349215200000,32.60],
+            [1349301600000,32.68],
+            [1349388000000,32.47],
+            [1349647200000,32.23],
+            [1349733600000,31.68],
+            [1349820000000,31.51],
+            [1349906400000,31.78],
+            [1349992800000,31.94],
+            [1350252000000,32.33],
+            [1350338400000,33.24],
+            [1350424800000,33.44],
+            [1350511200000,33.48],
+            [1350597600000,33.24],
+            [1350856800000,33.49],
+            [1350943200000,33.31],
+            [1351029600000,33.36],
+            [1351116000000,33.40],
+            [1351202400000,34.01],
+            [1351638000000,34.02],
+            [1351724400000,34.36],
+            [1351810800000,34.39],
+            [1352070000000,34.24],
+            [1352156400000,34.39],
+            [1352242800000,33.47],
+            [1352329200000,32.98],
+            [1352415600000,32.90],
+            [1352674800000,32.70],
+            [1352761200000,32.54],
+            [1352847600000,32.23],
+            [1352934000000,32.64],
+            [1353020400000,32.65],
+            [1353279600000,32.92],
+            [1353366000000,32.64],
+            [1353452400000,32.84],
+            [1353625200000,33.40],
+            [1353884400000,33.30],
+            [1353970800000,33.18],
+            [1354057200000,33.88],
+            [1354143600000,34.09],
+            [1354230000000,34.61],
+            [1354489200000,34.70],
+            [1354575600000,35.30],
+            [1354662000000,35.40],
+            [1354748400000,35.14],
+            [1354834800000,35.48],
+            [1355094000000,35.75],
+            [1355180400000,35.54],
+            [1355266800000,35.96],
+            [1355353200000,35.53],
+            [1355439600000,37.56],
+            [1355698800000,37.42],
+          
+           
+           
+          ]
+        }],
+          chart: {
+          id: 'area-datetime',
+          type: 'area',
+          height: 400,
+          zoom: {
+            autoScaleYaxis:false,
+          }
+        },
+        annotations: {
+          yaxis: [{
+            y: 35,
+            borderColor: '#418578',
+            label: {
+              show: true,
+              text: 'Support',
+              style: {
+                color: "#fff",
+                background: '#418578'
+              }
+            }
+          }],
+          xaxis: [{
+            x: new Date('14 Nov 2012').getTime(),
+            borderColor: '#418578',
+            yAxisIndex: 0,
+            label: {
+              show: true,
+              text: '$859.432',
+              style: {
+                color: "#fff",
+                background: '#418578'
+              }
+            }
+          }]
+        },
+        dataLabels: {
+          enabled: false
+        },
+        markers: {
+          size: 0,
+          style: 'hollow',
+        },
+        xaxis: {
+          type: 'datetime',
+          min: new Date('01 Mar 2012').getTime(),
+          tickAmount: 6,
+        },
+        tooltip: {
+          x: {
+            format: 'dd MMM yyyy'
+          }
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shadeIntensity: 1,
+            opacityFrom: 0.7,
+            opacityTo: 0.9,
+            stops: [0, 100]
+            
+          }
+        },
+        fill: {
+          
+            colors: ['#418578']
+          }
+       
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart-timeline"), options);
+        chart.render();
+      
+      // CHART 
+        var resetCssClasses = function(activeEl) {
+        var els = document.querySelectorAll('button')
+        Array.prototype.forEach.call(els, function(el) {
+          el.classList.remove('active')
+        })
+      
+        activeEl.target.classList.add('active')
+      }
+      
+      if(document.querySelector('#one_month')){
+        document.querySelector('#one_month').addEventListener('click', function(e) {
+            resetCssClasses(e)
+        
+            chart.zoomX(
+              new Date('28 Jan 2013').getTime(),
+              new Date('27 Feb 2013').getTime()
+            )
+          })
+        
+        document
+          .querySelector('#six_months')
+          .addEventListener('click', function(e) {
+            resetCssClasses(e)
+        
+            chart.zoomX(
+              new Date('27 Sep 2012').getTime(),
+              new Date('27 Feb 2013').getTime()
+            )
+          })
+        
+        document
+          .querySelector('#one_year')
+          .addEventListener('click', function(e) {
+            resetCssClasses(e)
+            chart.zoomX(
+              new Date('27 Feb 2012').getTime(),
+              new Date('27 Feb 2013').getTime()
+            )
+          })
+        
+        document.querySelector('#ytd').addEventListener('click', function(e) {
+          resetCssClasses(e)
+        
+          chart.zoomX(
+            new Date('01 Jan 2013').getTime(),
+            new Date('27 Feb 2013').getTime()
+          )
+        })
+        
+        document.querySelector('#all').addEventListener('click', function(e) {
+          resetCssClasses(e)
+        
+          chart.zoomX(
+            new Date('23 Jan 2012').getTime(),
+            new Date('27 Feb 2013').getTime()
+          )
+        })
+      }
+
+
+// chart for user activations 
+        var barChart = document.getElementById('barch').getContext('2d');
+          var barch = new Chart(barChart, {
+            type:'bar',
+         data: {
+      labels: ['Jan','Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+      datasets: [{
+        axis: 'y',
+        label: 'My First Dataset',
+        data: [40, 81, 60, 81, 40, 32, 50, 32, 70, ],
+        fill: false,
+        backgroundColor: [
+      '#ba895d',
+      '#418578',
+      '#418578',
+      '#ba895d',
+      '#418578',
+      '#418578',
+      '#418578',
+      '#ba895d',
+      '#418578'
+    ],
+    borderColor: [
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)']
+      }],
+      },
+  });
+  
+    // TRANSACTION CHART 
+
+    const DATA_COUNT = 7;
+      const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+    
+      var lineChart = document.getElementById('linechart').getContext('2d');
+          var linechart = new Chart(lineChart, {
+            type:'line',
+       data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May','Jun'],
+        datasets: [
+          {
+            label: 'Dataset 1',
+            animations: {
+              y: {
+                duration: 2000,
+                delay: 500
+              }
+            },
+            data:[0,0,0,0,0,0],
+            
+            borderColor: ' rgb(186, 137, 98, 0.1)',
+            backgroundColor: ' rgb(186, 137, 98, 0.1)' ,
+            fill: 1,
+            tension: 0.5
+          },
+          {
+            
+            label: 'Dataset 2',
+            data:[50, 40,20,50,80,70],
+            borderColor: '#ba895d',
+            backgroundColor:'#ba895d',
+          }
+        ]
+      },
+    });
+
+
+       
+            
+      
+      
+    
+      
+    
+      
+    
+      
+    
+       
+
+         
+    
+
+
+
+     
+      
+    
+      
+    
+    </script>
+
+            
+        
+    
+   
+   
+</body>
+</html>

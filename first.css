@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+
+
+    --green:#27ae60;
+    --black:#444;
+    --light-color:#777;
+    --bg-color:#e6e6e6;
+    --border:.1px solid rgba(0,0,0,.2);
+    --box-shadow: .4rem .4rem 1rem #ccc, -.4rem -.4rem 1rem #fff;
+    --box-shadow-inset:.4rem .4rem 1rem #ccc inset, -.4rem -.4rem 1rem #fff inset;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    background:white;
+    font-size: 14px;
+    
+}
+body.active{
+    --black:#fff;
+    --light-color:#ddd;
+    --bg-color:#222;
+    --border:.1rem solid rgba(0,0,0,.4);
+    --box-shadow: .4rem .4rem 1rem #111, -.4rem -.4rem 1rem #333;
+    --box-shadow-inset:.4rem .4rem 1rem #111 inset, -.4rem -.4rem 1rem #333 inset;
+}
+h2{
+    color: #24695c;
+}
+p{color: #777;}
+
+section{
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* ------------------------- navigation bar styling ------------------------- */
+nav{
+    
+    position: fixed;
+    height: 90px;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    
+    
+    
+}
+/* left bar with logo   */
+.left{
+    flex: 1.3;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+    justify-content: space-around;
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+#bars{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+#bars:hover{
+    background:  #24695c1A;
+    cursor: pointer;
+}
+/* end  */
+ /* middle bar  */
+.middle{
+    flex: 1;
+    padding:0 20px ;
+    background: white;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+    border-bottom: var(--border);
+}
+.middle i{
+    color: #418578;
+    font-size: 15px;
+}
+.middle P{
+    color:var(--bs-gray) ;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 50px;
+}
+/* end  */
+
+/* right bar with icons  */
+.right{
+  
+    flex:4;
+    padding-right: 25px;
+    /* background: pink; */
+    height: inherit;
+    display: flex; 
+    justify-content: end;
+    align-items: center;
+    border-bottom: var(--border);
+}
+
+.right i{
+    font-size: 15px;
+    color: black;
+}
+
+.right ul li{
+    display: inline-block;
+    padding: 0 20px;
+    list-style: none;
+    position: relative;
+}
+.right ul li a{
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.right ul li ul{
+    width: 270px;
+    right: 5px;
+    border-radius: 5px;
+    /* margin-top: 20px; */
+    top: 100%;
+    background: #fff;
+    position: absolute;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.right ul li:hover ul{
+    display: block;
+}
+/* .notifications dropdown  */
+.right ul li .notifications{
+    width: 300px;
+    right: 5px;
+    padding-top: 27px;
+    background: #fff;
+    position: absolute;
+    border-radius: 0 !important;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.right ul li:hover .notifications{
+    display: block;
+}
+
+.right ul li .notifications-1{
+    width: 350px;
+    right: 5px;
+    padding-top: 27px;
+    background: #fff;
+    position: absolute;
+    border-radius: 0 !important;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.right ul li:hover .notifications-1{
+    display: block;
+}
+
+/* ------------------------- styling for ul dropdown ------------------------ */
+.right ul li ul li{
+    display: block;
+    margin: 5px; 
+}
+.right ul li ul li a{
+    margin-top: 8px;
+    width: 100%;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+.right ul li ul li a img{
+    position: absolute;
+    left: 0;
+}
+
+.right ul li ul li a span{
+    position: absolute;
+    left: 18%;
+    font-size: 15px;
+}
+
+.right ul li ul li a i:nth-child(1){
+    position: absolute;
+    right: 0;
+    display: block;
+    color: orange;
+}
+
+#search-bookmark{
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    padding: 5px 10px;
+    border: 0.5px solid silver;
+    display: flex;
+    align-items: center;
+   border-radius: 6px;
+}
+
+#search-bookmark i{
+    font-size: 15px;
+    color:var( --bs-secondary) ;
+}
+#search-bookmark input{
+    border: none;
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* .right ul li ul li a i:nth-child(1):hover{
+    background-color: orange;
+} */
+
+/* -------------------- styling for notification dropdown ------------------- */
+hr{
+    border: 0.5px solid rgb(241, 235, 235);
+}
+.notisfy{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    padding: 10px 0;
+    
+}
+.notisfy h1{
+    font-size: 17px;
+}
+#btn-4{
+    width: 20px;
+    height: 20px;
+    background: #24695c1A;
+    border: none;
+    margin-left: 30px; 
+}
+.notisfy-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    
+}
+.notisfy-1 p{
+    margin-left: 65px;
+    font-size: 13px;
+    color: #418578;
+    
+
+}
+.notisfy-1 p span{
+    margin-left:40px ;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    color:#418578;
+    background-color:#24695c1A ;
+}
+
+.circle-icon:hover{
+    background:#418578 ;
+    color: white ;
+}
+
+.notisfy-1 h1{
+    margin-left: 20px;
+    color: #418578;
+    font-size: 16px;
+}
+.notisfy-1 h1 span{
+    color: black;
+    font-size: 14px;
+}
+
+
+/* ends  */
+
+
+/* styling for icons */
+.btn-1{
+    width: 40px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+
+}
+.btn-1:hover{
+    background: #24695c1A;
+    cursor: pointer;
+}
+/* login button  */
+.btn{
+    padding: 10px 25px;
+    background: #24695c1A;
+    color: #24695c;
+    font-weight: 600;
+    border: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn i{
+    margin-right: 10px;
+}
+.btn:hover{
+    background: #24695c;
+    color: white;
+    cursor: pointer;
+}
+/* end  */
+/* -------------------- navigation bar styling ends here -------------------- */
+
+/* ----------------------------- sidebar section ---------------------------- */
+/* #carousel{
+    width: 100%;
+   
+} */
+.header{
+    top: 90px;
+    position: fixed;
+    z-index: 999;
+    background: white;
+    width: 28.5rem;
+    border-right: var(--border);
+    height: 100%;
+    /* padding: 1rem; */
+    text-align: center;
+    
+}
+ .btn-setting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.btn-setting button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background: #24695c1A;
+    border-radius: 50%;
+    color: #418578;
+    margin-left: 30px;
+}
+.btn-setting button:hover{
+    background-color:#418578 ;
+    color: white;
+}
+
+.header .user img{
+    margin: 1rem 0;
+    border: 1rem solid transparent;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    background: #24695c1A;
+   
+}
+.mainbody{
+    margin-top: 90px;
+    margin-left: 28.5rem;
+    padding-left: 3rem;
+   
+    /* background: red; */
+    /* height: 800px; */
+}
+
+
+.sidebar-content{
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
